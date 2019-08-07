@@ -25,7 +25,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="username"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="kaS-MI-7ye">
                                 <rect key="frame" x="47.5" y="292.5" width="280" height="30"/>
@@ -42,7 +42,7 @@
                                 <state key="normal" title="Log In"/>
                                 <connections>
                                     <action selector="didLogInButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="jYJ-Be-hEt"/>
-                                    <segue destination="GaI-jb-LdU" kind="presentation" id="cEb-Xh-CUT"/>
+                                    <segue destination="GaI-jb-LdU" kind="presentation" identifier="" id="cEb-Xh-CUT"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="bqg-M0-U3o">

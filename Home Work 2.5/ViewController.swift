@@ -25,9 +25,9 @@ class ViewController: UIViewController {
         userNameTextField.delegate = self
         passwordTextField.delegate = self
     }
-        
+    
     @IBAction func didLogInButton() {
-        if !dataIsCorrect(userName: userNameTextField.text!, password: passwordTextField.text!) {
+        if !checkingEnteredData(userName: userNameTextField.text, password: passwordTextField.text) {
             showAlert(title: "Invalid login or password", message: "Please, enter correct login and password")
         }
     }
@@ -40,8 +40,8 @@ class ViewController: UIViewController {
         }
     }
     
-    private func dataIsCorrect(userName: String, password: String) -> Bool {
-        if userName.lowercased() != self.userName.lowercased() {
+    private func checkingEnteredData(userName: String?, password: String?) -> Bool {
+        if userName != self.userName {
             return false
         }
         if password != self.password {
@@ -51,8 +51,8 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let welcomeVC = segue.destination as! WelcomeViewController
-        welcomeVC.userName = userNameTextField.text!
+        let welcomeVC = segue.destination as? WelcomeViewController
+        welcomeVC?.userName = userNameTextField.text!
     }
 }
 
@@ -67,16 +67,23 @@ extension ViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
-        
         view.endEditing(true)
     }
 }
 
 extension ViewController: UITextFieldDelegate {
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
+        if textField == userNameTextField {
+            passwordTextField.becomeFirstResponder()
+        } else if textField == passwordTextField {
+            textField.resignFirstResponder()
+            didLogInButton()
+            
+//            let welcomeVC = WelcomeViewController()
+//            self.prepare(for: segueForWelcomeVC, sender: nil)
+//            self.present(welcomeVC, animated: true, completion: nil)
+        }
         return true
     }
 }
-
-

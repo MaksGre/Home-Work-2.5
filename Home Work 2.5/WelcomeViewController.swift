@@ -24,20 +24,19 @@ class WelcomeViewController: UIViewController {
             """,
             textForStyling: "\(userName)!")
     }
-    
     @IBAction func didCancelButton() {
         dismiss(animated: true)
     }
 }
 
 extension WelcomeViewController {
-    
+
     private func styledTextFor(label: UILabel, plainText: String, textForStyling: String) {
         let text = "\(plainText) \(textForStyling)"
         let styledText = NSMutableAttributedString(string: text)
         let attributes =
             [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: label.font.pointSize),
-             NSAttributedString.Key.foregroundColor : UIColor.red]
+             NSAttributedString.Key.foregroundColor: UIColor.red]
         let nameRange = (text as NSString).range(of: textForStyling)
         styledText.setAttributes(attributes, range: nameRange)
         
