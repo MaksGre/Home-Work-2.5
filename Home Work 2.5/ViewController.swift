@@ -18,7 +18,14 @@ class ViewController: UIViewController {
     
     private let userName = "Steven"
     private let password = "Jobs"
-
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        userNameTextField.delegate = self
+        passwordTextField.delegate = self
+    }
+        
     @IBAction func didLogInButton() {
         if !dataIsCorrect(userName: userNameTextField.text!, password: passwordTextField.text!) {
             showAlert(title: "Invalid login or password", message: "Please, enter correct login and password")
@@ -56,6 +63,19 @@ extension ViewController {
         let okAction = UIAlertAction(title: "OK", style: .default)
         alert.addAction(okAction)
         present(alert, animated: true)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        
+        view.endEditing(true)
+    }
+}
+
+extension ViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }
 

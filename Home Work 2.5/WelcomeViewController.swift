@@ -20,7 +20,7 @@ class WelcomeViewController: UIViewController {
         styledTextFor(label: userNameLabel, plainText:
             """
             Welcome
-            comrade, \n
+            comrade,\n
             """,
             textForStyling: "\(userName)!")
     }
