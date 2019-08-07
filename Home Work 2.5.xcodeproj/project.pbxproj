@@ -12,6 +12,7 @@
 		B5FED0C622F99E6500BE440A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5FED0C422F99E6500BE440A /* Main.storyboard */; };
 		B5FED0C822F99E6700BE440A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5FED0C722F99E6700BE440A /* Assets.xcassets */; };
 		B5FED0CB22F99E6700BE440A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5FED0C922F99E6700BE440A /* LaunchScreen.storyboard */; };
+		B5FED0D322FA94D500BE440A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FED0D222FA94D500BE440A /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B5FED0C722F99E6700BE440A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5FED0CA22F99E6700BE440A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5FED0CC22F99E6700BE440A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5FED0D222FA94D500BE440A /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				B5FED0C022F99E6500BE440A /* AppDelegate.swift */,
 				B5FED0C222F99E6500BE440A /* ViewController.swift */,
 				B5FED0C422F99E6500BE440A /* Main.storyboard */,
+				B5FED0D222FA94D500BE440A /* WelcomeViewController.swift */,
 				B5FED0C722F99E6700BE440A /* Assets.xcassets */,
 				B5FED0C922F99E6700BE440A /* LaunchScreen.storyboard */,
 				B5FED0CC22F99E6700BE440A /* Info.plist */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5FED0D322FA94D500BE440A /* WelcomeViewController.swift in Sources */,
 				B5FED0C322F99E6500BE440A /* ViewController.swift in Sources */,
 				B5FED0C122F99E6500BE440A /* AppDelegate.swift in Sources */,
 			);
@@ -292,7 +296,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Grebenozhko-Maksim.Home-Work-2-5";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +314,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Grebenozhko-Maksim.Home-Work-2-5";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
