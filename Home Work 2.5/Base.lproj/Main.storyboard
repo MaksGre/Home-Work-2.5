@@ -64,6 +64,15 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQW-YF-qmo">
+                                <rect key="frame" x="81.5" y="122" width="212.5" height="68.5"/>
+                                <string key="text">Hello, unknown user! 
+Please, enter your 
+user name and password</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -72,11 +81,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Qgt-5w-PjB" secondAttribute="trailing" constant="20" id="8YP-43-tJ4"/>
                             <constraint firstItem="bqg-M0-U3o" firstAttribute="top" secondItem="spN-2B-6Yj" secondAttribute="bottom" constant="24" id="IIQ-Ht-lWQ"/>
                             <constraint firstItem="Qgt-5w-PjB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="JC9-hi-dKW"/>
+                            <constraint firstItem="wQW-YF-qmo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-177.5" id="RY2-Fh-wX6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kaS-MI-7ye" secondAttribute="trailing" constant="20" id="UNw-6C-PhO"/>
                             <constraint firstItem="spN-2B-6Yj" firstAttribute="top" secondItem="kaS-MI-7ye" secondAttribute="bottom" constant="28" id="YSB-qF-BJp"/>
                             <constraint firstItem="bqg-M0-U3o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="afQ-dP-SWj"/>
                             <constraint firstItem="kaS-MI-7ye" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="igo-hC-TP2"/>
                             <constraint firstItem="spN-2B-6Yj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nwS-fb-yYc"/>
+                            <constraint firstItem="wQW-YF-qmo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rbP-4k-32S"/>
                             <constraint firstItem="kaS-MI-7ye" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="toW-hL-469"/>
                             <constraint firstItem="kaS-MI-7ye" firstAttribute="top" secondItem="Qgt-5w-PjB" secondAttribute="bottom" constant="8" id="uaS-I4-bhr"/>
                         </constraints>
@@ -92,7 +103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="988" y="137"/>
+            <point key="canvasLocation" x="988" y="136.28185907046478"/>
         </scene>
         <!--Welcome View Controller-->
         <scene sceneID="AXl-3Q-X2d">
@@ -110,12 +121,12 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQi-SB-eA9">
-                                <rect key="frame" x="146" y="185" width="83.5" height="61"/>
+                                <rect key="frame" x="128.5" y="170.5" width="118" height="90"/>
                                 <string key="text">Welcome
 comrade,
 userName!</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
